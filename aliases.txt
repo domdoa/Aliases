@@ -1,0 +1,48 @@
+function gb() {
+  git branch
+}
+
+function gcb() {
+  git checkout -b "$1"
+}
+
+function gcm() {
+  git checkout master
+}
+
+function gp() {
+  git pull
+}
+
+function gc(){
+  git checkout "$1"
+}
+
+function gbd(){
+  git branch -D $1
+}
+
+function gs(){
+  git stash
+}
+
+function gsp(){
+  git stash pop
+}
+
+function gsl(){
+  git stash list
+}
+
+function translations(){
+  open http://localhost:5050/
+  bundle exec iye config/locales/views
+}
+
+function migrate(){
+  bin/rake db:migrate
+}
+
+function server(){
+  bin/rails s
+}
