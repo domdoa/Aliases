@@ -117,8 +117,16 @@ function gcm() {
   git checkout master
 }
 
+function gcd() {
+  git checkout development
+}
+
 function gcmp() {
   git checkout master || git pull
+}
+
+function gcdp() {
+  git checkout development || git pull
 }
 
 function gp() {
@@ -143,6 +151,14 @@ function gsp(){
 
 function gsl(){
   git stash list
+}
+
+function ys(){
+  yarn start
+}
+
+function yi(){
+  yarn install
 }
 
   export NVM_DIR="$HOME/.nvm"
